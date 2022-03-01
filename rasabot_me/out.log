@@ -1,0 +1,14 @@
+2020-03-26 20:29:37,383 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-03-26 20:52:16,419 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models'
+Traceback (most recent call last):
+  File "c:\users\vidushi\appdata\local\continuum\anaconda3\envs\rasaenv\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\vidushi\appdata\local\continuum\anaconda3\envs\rasaenv\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\vidushi\appdata\local\continuum\anaconda3\envs\rasaenv\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models not found
+2020-03-26 20:53:16,418 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-03-26 20:53:16,676 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
